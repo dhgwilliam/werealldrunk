@@ -2,3 +2,4 @@ _site/
 tu/
 sass/
 .sass-cache/
+*.swp
