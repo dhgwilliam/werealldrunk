@@ -62,12 +62,10 @@ p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset {
 .posts {
   padding-left: 0px;
   font-size: 14px;
-  border-top: 1px solid #EEE;
+  //border-bottom: 1px solid #EEE;
 }
 
-.posts a {
-  color: #BBB;
-}
+.posts a { color: #BBB; }
 .posts a:hover{color: red;}
 
 #footer p{
