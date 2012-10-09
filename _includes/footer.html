@@ -1,4 +1,10 @@
-    <div id="footer" class="grid-12">
+    <div id="footer" class="grid-12" style="text-align:right;">
+      <ul class="posts">
+      <li><a href="/">home</a></li>
+      {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+      </ul>
       <p>&copy; <a href="http://davidgwilliam.com">David Gwilliam</a> {{ site.time | date: "%Y" }} </p>
     </div>
   </div>

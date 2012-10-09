@@ -1,7 +1,11 @@
 {% include header.html %}
-  <div class="grid-12"><p><a href="/">Home</a></p></div>
-  <h1 class="prefix-1 grid-8">{{ page.title }}</h1>
-  <div id="content" class="prefix-1 grid-6">
-    {{ content }}
+  <div class="grid-12">
+    <div id="header">
+      <h1>{{page.title}}</h1>
+      <h6>{{page.date | date_to_string }}</h6>
+    </div>
+    <div id="content">
+      {{content}}<br />
+    </div>
   </div>
 {% include footer.html %}

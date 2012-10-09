@@ -1,5 +1,11 @@
 {% include header.html %}
   <div class="grid-12">
-    {{ content }}
+    <div id="header">
+      <h1><a href="{{site.posts.first.url}}">{{site.posts.first.title}}</a></h1>
+      <h6>{{site.posts.first.date | date_to_string }}</h6>
+    </div>
+    <div id="content">
+      {{site.posts.first.content}}<br />
+    </div>
   </div>
 {% include footer.html %}
